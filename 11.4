@@ -1,0 +1,13 @@
+from random import randint
+F=[]
+for i in range(5):
+    F.append(randint(1, 100))
+print(F)
+G=[]
+for i in range(5):
+    G.append(randint(1, 100))
+print(G)
+def sort(F,G):
+    F+=G
+    return sorted(F)
+print(sort(F,G))
